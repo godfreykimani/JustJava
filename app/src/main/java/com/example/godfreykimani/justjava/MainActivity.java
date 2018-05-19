@@ -21,6 +21,10 @@ import java.text.NumberFormat;
  */
 public class MainActivity extends AppCompatActivity {
 
+//    setting a global variable
+
+    int quantity = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,21 +35,19 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
-        int quantity = 20;
-        display(quantity * 2 +1);
-        displayPrice(quantity * 5);
+        displayPrice(10 * quantity);
     }
 
     /*Set increment on clicking the + button*/
 
     public void increment(View view) {
-        int quantity = 3;
+        quantity = 1 + quantity;
         display(quantity);
     }
     /*Set increment on clicking the - button*/
 
     public void decrement(View view) {
-        int quantity = 1;
+        quantity = quantity - 1;
         display(quantity);
     }
 
