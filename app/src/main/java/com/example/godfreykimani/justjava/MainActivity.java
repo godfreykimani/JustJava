@@ -36,6 +36,20 @@ public class MainActivity extends AppCompatActivity {
         displayPrice(quantity * 5);
     }
 
+    /*Set increment on clicking the + button*/
+
+    public void increment(View view) {
+        int quantity = 3;
+        display(quantity);
+    }
+    /*Set increment on clicking the - button*/
+
+    public void decrement(View view) {
+        int quantity = 1;
+        display(quantity);
+    }
+
+
     /**
      * This method displays the given quantity value on the screen.
      */
