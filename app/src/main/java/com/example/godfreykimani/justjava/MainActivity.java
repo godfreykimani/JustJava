@@ -37,8 +37,14 @@ public class MainActivity extends AppCompatActivity {
     public void submitOrder(View view) {
 //        displayPrice(10 * quantity);
 
-        String priceMessage = "Free";
+        String priceMessage = "Total: KES " + quantity;
+
+//      upadting price string
+        priceMessage = priceMessage  + "\nThankyou";
+
         displayMessage(priceMessage);
+
+
     }
 
     /*Set increment on clicking the + button*/
